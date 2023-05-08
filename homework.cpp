@@ -2,20 +2,16 @@
 
 using namespace  std;
 
-int fib( int res)
+void fib( int n)
 {
-    if (res <= 1) 
-    {
-     return 0;
-    } 
-    else if (res == 2) 
-    {
-     return 1;
-    } 
-    else 
-    {
-     return fib(res - 1) + fib(res - 2);
-    }
+   int k, res = 0, p = 1;
+   for(int i = 1; i <= n; i++)
+   {
+        cout<<res<<endl;
+        k = res;
+        res = res + p;
+        p = k;
+   }
 }
 
 int main()
@@ -23,6 +19,6 @@ int main()
     int i, n, res;
     cout<<"print n = ";
     cin>>n;
-    cout<<fib(n)<<endl;
+    fib(n);
 }
 
