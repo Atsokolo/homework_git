@@ -6,7 +6,7 @@ int fib( int res)
 {
     if (res <= 1) 
     {
-     return 1;
+     return 0;
     } 
     else if (res == 2) 
     {
