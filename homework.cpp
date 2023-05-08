@@ -2,8 +2,27 @@
 
 using namespace  std;
 
-void main()
+int fib( int res)
 {
-    cout<<"Hello world !"<<endl;
+    if (res <= 1) 
+    {
+     return 1;
+    } 
+    else if (res == 2) 
+    {
+     return 1;
+    } 
+    else 
+    {
+     return fib(res - 1) + fib(res - 2);
+    }
+}
+
+int main()
+{
+    int i, n, res;
+    cout<<"print n = ";
+    cin>>n;
+    cout<<fib(n)<<endl;
 }
 
